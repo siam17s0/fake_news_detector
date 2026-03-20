@@ -12,7 +12,14 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
-nltk.download('punkt')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
 # Preprocessing
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
