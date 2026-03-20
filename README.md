@@ -1,6 +1,8 @@
 # fake_news_detector
 Machine Learning based Fake News Detection System using NLP
 
+Live Demo:https://fake-news-detector-ml-app.streamlit.app
+
 ## Overview
 This project is a Machine Learning-based Fake News Detection system that classifies news articles as Real or Fake using Natural Language Processing (NLP) techniques.
 The model analyzes the textual content of news and predicts its authenticity with high accuracy.
